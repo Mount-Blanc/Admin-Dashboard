@@ -48,7 +48,7 @@ const App = () => {
                   </div>
                 </div>
 
-            </div>
+            <div>
               <Routes>
                 {/* Dashboard */}
                 <Route path="/"  element="ECommerce"/>
@@ -72,14 +72,12 @@ const App = () => {
                 <Route path="/pie"  element="Pie"/>
                 <Route path="/color-mapping"  element="ColorMapping"/>
                 <Route path="/pyramid"  element="Pyramid"/>
-                <Route path="/stacked"  element="Stacked"/>
-
+                <Route path="/stacked"  element="Stacked"/>     
               </Routes>
-
-
-           </div>
-            </BrowserRouter>
+            </div>
           </div>
+            </BrowserRouter>
+         </div>
     )
 }
 
