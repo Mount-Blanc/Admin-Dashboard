@@ -14,7 +14,7 @@ const Sidebar = () => {
       {activeMenu && (<>
       <div className="flex justify-between items-center">
       <Link to='/' onClick={ () => {} }
-      className="items-center">
+      className="items-center gap-2 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:white text-slate-900">
         <SiShopware /> <span>Shoppy</span>
         </Link>
       </div>
