@@ -1,7 +1,7 @@
 import React, { createContext, useContext, 
 useState } from 'react';
 
-const StateContext= creteContext();
+const StateContext= createContext();
 
 const initialState = {
     chat:false,
@@ -11,11 +11,19 @@ const initialState = {
 }
 
 export const ContextProvider= ({children}) => {
+   const [activeMenu, setactiveMenu] = useState(true);
+   
+   
     return (
-        <StateContext.Prodiver
-        value={{ test: 'test'}}
+        <StateContext.Provider
+        value={{
+             activeMenu,
+             setactiveMenu,
+            }}
     >
         {children}
-        </StateContext.Prodiver>
+        </StateContext.Provider>
     )
 }
+
+export const useStateContext =() => useContext(StateContext);
