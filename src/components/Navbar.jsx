@@ -14,7 +14,7 @@ const NavButton =({ title, customFunc, icon,
   color, dotColor }) => (
     <TooltipComponent content ={title}
     position="Bottom-center">
-      <buttpn></buttpn>
+      <button></button>
     </TooltipComponent>
   )
 
