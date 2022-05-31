@@ -13,7 +13,7 @@ const initialState = {
 export const ContextProvider= ({children}) => {
     return (
         <StateContext.Prodiver
-        value={{ textL 'test'}}
+        value={{ test: 'test'}}
     >
         {children}
         </StateContext.Prodiver>
