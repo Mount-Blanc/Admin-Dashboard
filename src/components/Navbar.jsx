@@ -3,7 +3,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { AiFillShopping, FiShoppingCart } from 'react-icons/fi';
 import {BsChatLeft} from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
-import {MDkeyboardArrowDown }from 'react-cons/md';
+import {MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import avatar from '../data/avatar.jpg';
@@ -45,7 +45,7 @@ const Navbar = () => {
        />
        <div className='flex'>
        <NavButton title= "Cart" 
-      customFunc={() => handleClick('cart')}
+      customFunc={() => handleClick ('cart')}
        color="blue"  
       icon= {<FiShoppingCart />}
        />
