@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AiFillShopping, FiShoppingCart } from 'react-icons/fi';
-import {BschatLeft} from 'react-icons/bs';
+import {BsChatLeft} from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
 import {MDkeyboardArrowDown }from 'react-cons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
@@ -67,12 +67,13 @@ const Navbar = () => {
          position='BottomCenter'
          >
            <div className=" flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded 1g"
-           onClick={() => handeClick(userProfile)}>
+           onClick={() => handleClick('userProfile')}>
              <img 
              className="rounded-full w-8 h-8"
              src={avatar}
              />
-             <span></span>
+             <span className='text-gray-400 text-14'>Hi, </span>{ ''}
+             <span className="text-gray-400 font-bold ml-1 text-14"> Michael</span>
            </div>
        </TooltipComponent>
        </div>
