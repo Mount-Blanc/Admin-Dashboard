@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import { AiOutlineMenu } from 'react-icons/ai';
-import { AiFillShopping } from 'react-icons/fi';
+import { AiFillShopping, FiShoppingCart } from 'react-icons/fi';
 import {BschatLeft} from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
 import {MDkeyboardArrowDown }from 'react-cons/md';
@@ -36,10 +36,19 @@ const Navbar = () => {
 
   return (
     <div className= "flex justify-between p-2 md:mx-6 relative">
-      <NavButton title= "Menu" customFunc={() =>
+      <NavButton title= "Menu" 
+      customFunc={() =>
       setActiveMenu ((prevActiveMenu) =>
       !prevActiveMenu)} color="blue"  icon=
-      {<AiOutlineMenu />} />
+      {<AiOutlineMenu />}
+       />
+       <div className='flex'>
+       <NavButton title= "Cart" 
+      customFunc={() => handleClick('cart')}
+       color="blue"  
+      icon= {<FiShoppingCart />}
+       />
+       </div>
     </div>
   )
 }
