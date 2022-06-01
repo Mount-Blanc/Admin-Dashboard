@@ -40,25 +40,26 @@ const Navbar = () => {
       <NavButton title= "Menu" 
       customFunc={() =>
       setActiveMenu ((prevActiveMenu) =>
-      !prevActiveMenu)} color="blue"  icon=
-      {<AiOutlineMenu />}
+      !prevActiveMenu)} color="blue" 
+       icon= {<AiOutlineMenu />}
        />
        <div className='flex'>
-       <NavButton title= "Cart" 
-      customFunc={() => handleClick ('cart')}
+       <NavButton
+        title= "Cart" 
+      customFunc={() =>  ('cart')}
        color="blue"  
       icon= {<FiShoppingCart />}
        />
         <NavButton 
         title= "Chat"
         dotColor="#03C9D7" 
-      customFunc={() => handleClick('chat')}
+      customFunc={() => ('chat')}
        color="blue"  
       icon= {<BsChatLeft />}
        />
         <NavButton
          title= "Notifications" 
-      customFunc={() => handleClick('notification')}
+      customFunc={() => ('notification')}
        color="blue"  
       icon= {<RiNotification3Line />}
        />
@@ -67,7 +68,7 @@ const Navbar = () => {
          position='BottomCenter'
          >
            <div className=" flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded 1g"
-           onClick={() => handleClick('userProfile')}>
+           onClick={() => ('userProfile')}>
              <img 
              className="rounded-full w-8 h-8"
              src={avatar}
