@@ -9,6 +9,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import avatar from '../data/avatar.jpg';
 import { Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../contexts/ContextProvider';
+import { TiPipette } from 'react-icons/ti';
 
 const NavButton =({ title, customFunc, icon,
   color, dotColor }) => (
@@ -61,6 +62,19 @@ const Navbar = () => {
        color="blue"  
       icon= {<RiNotification3Line />}
        />
+       <TooltipComponent
+         content='profile'
+         position='BottomCenter'
+         >
+           <div className=" flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded 1g"
+           onClick={() => handeClick(userProfile)}>
+             <img 
+             className="rounded-full w-8 h-8"
+             src={avatar}
+             />
+             <span></span>
+           </div>
+       </TooltipComponent>
        </div>
     </div>
   )
