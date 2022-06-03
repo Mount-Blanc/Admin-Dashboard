@@ -8,7 +8,7 @@ import { links } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
-  const {activeMenu, setActiveMenu} =useStateContext();
+  const activeMenu =true;
 
   const activeLink = `flex i
   tems-center
@@ -20,7 +20,7 @@ const Sidebar = () => {
   hover:bg-light-gray m-2`
 
   return (
-    <div>Sidebar</div>
+    <div className="ml-3 h-screen md:oveflow-hidden overflow-auto md:hover:overflow-auto pb-10">Sidebar</div>
   )
   }
 export default Sidebar
