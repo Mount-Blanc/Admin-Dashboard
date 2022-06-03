@@ -20,7 +20,7 @@ const Sidebar = () => {
   hover:bg-light-gray m-2`
 
   return (
-
+    <div>Sidebar</div>
   )
-
+  }
 export default Sidebar

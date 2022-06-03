@@ -11,15 +11,13 @@ import { Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../contexts/ContextProvider';
 import { TiPipette } from 'react-icons/ti';
 
-const NavButton =({ title, customFunc, icon,
-
-  )
 
 const Navbar = () => {
   const {activeMenu, setActiveMenu } = useStateContext();
 
 
   return (
-  
- }  
+    <div>navbar</div>
+  )
+  }
 export default Navbar
